@@ -15,11 +15,11 @@ public class Code2 {
         // Other ways to handle this
         String name1=name.orElse("Not having name ");
         System.out.println(name1);
-        System.out.println();
+
         name.ifPresent((n)->System.out.println(n.toUpperCase()));
 
         String name2= name.map((x)-> x.toUpperCase()).orElse("No name is ther ");
-
+        System.out.println(name2);
         name.filter((n)->n.startsWith("P")).ifPresent((x)-> System.out.println(x));
 
 
